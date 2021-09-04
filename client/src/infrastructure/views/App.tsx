@@ -1,16 +1,13 @@
-import React, { lazy, Suspense } from 'react'
+import React from 'react'
 
-import { Container, Loader } from 'infrastructure/views/components/ui'
-
-const HomeView = lazy(async () => await import('infrastructure/views/pages/Home'))
+import { Container } from 'infrastructure/views/components/ui'
+import Home from 'infrastructure/views/pages/Home'
 
 const App = (): JSX.Element => {
   return (
-    <Suspense fallback={<Loader />}>
-      <Container className="container">
-        <HomeView />
-      </Container>
-    </Suspense>
+    <Container className="container">
+      <Home />
+    </Container>
   )
 }
 
