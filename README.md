@@ -2,7 +2,7 @@
 
 ## frontend
 
-<https://gh-repository-search-pluriza.herokuapp.com/>
+<https://gh-repository-search-pluriza.netlify.app/>
 
 ## swagger
 
